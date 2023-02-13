@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const tareasRoutes = require("./tareasRoutes")
+const cropsRoutes = require("./cropsRoutes")
 
 // localhost:3001/api/
 router.get("/", (req, res, next) => {
@@ -30,5 +31,7 @@ router.get("/", (req, res, next) => {
 })
 
 router.use("/tareas", tareasRoutes.router)
+
+router.use("/crops", cropsRoutes.router)
 
 module.exports.router = router

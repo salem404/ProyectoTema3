@@ -1,7 +1,3 @@
-/**
- * @module tareas.controllers
- */
-
 const tareasServices = require("../services/tareasServices")
 
 /**
