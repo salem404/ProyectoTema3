@@ -1,0 +1,24 @@
+{
+  "crops": {
+    "Carrot": {
+      "name": "Carrot",
+      "nombre": "Zanahoria",
+      "seasons": ["Spring"]
+    },
+    "SnowDrop": {
+      "name": "SnowDrop",
+      "nombre": "Campanilla de invierno",
+      "seasons": ["Spring", "Winter"]
+    },
+    "Corn": {
+      "name": "Corn",
+      "nombre": "Maíz",
+      "seasons": ["Summer"]
+    },
+    "Grape": {
+      "name": "Grape",
+      "nombre": "Uva",
+      "seasons": ["Fall"]
+    }
+  }
+}
