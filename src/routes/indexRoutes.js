@@ -14,16 +14,28 @@ router.get("/", (req, res, next) => {
           <li> GET devuelve todas las tareas</li>
           <li> POST crea una nueva tarea</li>
         </ul>
+      </li>
+      <li>
         <h3>/api/tareas/{nombre de la tarea}</h3>
+          <ul>
+            <li> GET devuelve esa tarea</li>
+            <li> PUT edita esa tarea</li>
+            <li> DELETE elimina esa tarea</li>
+          </ul>
+      </li>
+      <li>
+        <h2>/api/crops</h2>
         <ul>
-        <li> GET devuelve esa tarea</li>
-        <li> PUT edita esa tarea</li>
-        <li> DELETE elimina esa tarea</li>
+          <li> GET devuelve todos los crops</li>
         </ul>
       </li>
-    
+      <li>
+        <h3>/api/crops/{nombre del crop en inglés}</h3>
+          <ul>
+            <li> GET devuelve ese crop</li>
+          </ul>
+      </li>
 
-    </ul>
 
     <ul> 
     

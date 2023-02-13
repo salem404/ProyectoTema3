@@ -109,7 +109,7 @@ const deleteTarea = (req, res, next) => {
 
   const deletedTarea = tareaService.deleteTarea(todo)
 
-  deletedProduct
+  deletedTarea
     ? res.send(200).send({ mensaje: "Tarea borrada correctamente" })
     : res
         .status(404)
