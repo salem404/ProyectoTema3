@@ -16,12 +16,9 @@ const getAllTareas = () => {
  * @returns
  */
 const createTarea = (tarea) => {
-  // Añadido id, y fechas de creacion y modificacion a las tareas
   const tareaNueva = {
     ...tarea,
-    id: uuid(),
-    fechaCreacion: new Date().toLocaleDateString(),
-    fechaModificacion: new Date().toLocaleDateString(),
+    done: false,
   }
 
   const tareaInsertada = tareasModelo.insertTarea(tareaNueva)
@@ -48,10 +45,9 @@ const getOneTarea = (nombre) => {
 const updateTarea = (original, nuevosDatos) => {
   const tareaNueva = {
     ...nuevosDatos,
-    fechaModificacion: new Date().toLocaleDateString(),
   }
 
-  const tareaModificada = tareasModelo.updateTarea(tareaNueva)
+  const tareaModificada = tareasModelo.updateTarea(original, tareaNueva)
 
   return !tareaModificada ? false : tareaModificada
 }

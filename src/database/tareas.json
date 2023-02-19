@@ -1,16 +1,3 @@
 {
-  "tareas": {
-    "cultivar": {
-      "nombre": "cultivar",
-      "descripcion": "cultivos de temporada"
-    },
-    "minar": {
-      "nombre": "minar",
-      "descripcion": "llegar al fondo de la mina de agua"
-    },
-    "recolectar": {
-      "nombre": "recolectar",
-      "descripcion": "100 de madera"
-    }
-  }
+  "tareas": {}
 }

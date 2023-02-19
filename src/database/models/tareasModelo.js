@@ -72,7 +72,7 @@ const deleteTarea = (nombre) => {
 const updateTarea = (tarea, nuevosDatos) => {
   // Cambio de los valores en los campos
   datos.tareas[tarea].nombre = nuevosDatos.nombre
-  datos.tareas[tarea].descripcion = nuevosDatos.descripcion
+  datos.tareas[tarea].done = nuevosDatos.done
 
   // Escribir el json
   fs.writeFileSync(

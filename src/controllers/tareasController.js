@@ -26,13 +26,12 @@ const createTarea = (req, res, next) => {
   console.log(body)
 
   // Comprobación de datos
-  if (!body.nombre || !body.descripcion) {
+  if (!body.nombre) {
     res.status(400).send({ mensaje: "Datos insuficientes" })
   } else {
     // Extracción de datos
     const newTarea = {
       nombre: body.nombre,
-      descripcion: body.descripcion,
     }
 
     // Comprobación de preexistencia
@@ -74,13 +73,13 @@ const updateTarea = (req, res, next) => {
   console.log(body)
 
   // Comprobación de datos
-  if (!body.nombre || !body.descripcion) {
+  if (!body.nombre || !body.done) {
     res.status(400).send({ mensaje: "Datos insuficientes" })
   } else {
     // Extracción de datos
     const newTarea = {
       nombre: body.nombre,
-      descripcion: body.descripcion,
+      done: body.done,
     }
 
     // Comprobación de preexistencia
@@ -107,10 +106,10 @@ const updateTarea = (req, res, next) => {
 const deleteTarea = (req, res, next) => {
   const { todo } = req.params
 
-  const deletedTarea = tareaService.deleteTarea(todo)
+  const deletedTarea = tareasServices.deleteTarea(todo)
 
   deletedTarea
-    ? res.send(200).send({ mensaje: "Tarea borrada correctamente" })
+    ? res.status(200).send({ mensaje: "Tarea borrada correctamente" })
     : res
         .status(404)
         .send({ mensaje: "No se pudo borrar la tarea porque no existe" })
