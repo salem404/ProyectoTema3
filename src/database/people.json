@@ -1,0 +1,36 @@
+{
+  "people": {
+    "Macy": {
+      "name": "Macy",
+      "birthday": {
+        "day": 25,
+        "season": "Spring"
+      },
+      "romanceable": true
+    },
+    "Valentina": {
+      "name": "Valentina",
+      "birthday": {
+        "day": 3,
+        "season": "Summer"
+      },
+      "romanceable": false
+    },
+    "Rafael": {
+      "name": "Rafael",
+      "birthday": {
+        "day": 4,
+        "season": "Fall"
+      },
+      "romanceable": true
+    },
+    "Millie": {
+      "name": "Millie",
+      "birthday": {
+        "day": 3,
+        "season": "Winter"
+      },
+      "romanceable": true
+    }
+  }
+}
