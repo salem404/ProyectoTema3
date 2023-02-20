@@ -15,10 +15,20 @@
       "nombre": "Maíz",
       "seasons": ["Summer"]
     },
+    "Blueberry": {
+      "name": "Blueberry",
+      "nombre": "Arándano",
+      "seasons": ["Summer"]
+    },
     "Grape": {
       "name": "Grape",
       "nombre": "Uva",
       "seasons": ["Fall"]
+    },
+    "Cotton": {
+      "name": "Cotton",
+      "nombre": "Algodón",
+      "seasons": ["Fall", "Winter"]
     }
   }
 }

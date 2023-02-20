@@ -1,5 +1,13 @@
 {
   "people": {
+    "Ben": {
+      "name": "Ben",
+      "birthday": {
+        "day": 22,
+        "season": "Spring"
+      },
+      "romanceable": true
+    },
     "Macy": {
       "name": "Macy",
       "birthday": {
@@ -16,6 +24,14 @@
       },
       "romanceable": false
     },
+    "Sam": {
+      "name": "Sam",
+      "birthday": {
+        "day": 8,
+        "season": "Summer"
+      },
+      "romanceable": false
+    },
     "Rafael": {
       "name": "Rafael",
       "birthday": {
@@ -24,6 +40,14 @@
       },
       "romanceable": true
     },
+    "Randy": {
+      "name": "Randy",
+      "birthday": {
+        "day": 19,
+        "season": "Fall"
+      },
+      "romanceable": false
+    },
     "Millie": {
       "name": "Millie",
       "birthday": {
@@ -31,6 +55,14 @@
         "season": "Winter"
       },
       "romanceable": true
+    },
+    "Archie": {
+      "name": "Archie",
+      "birthday": {
+        "day": 24,
+        "season": "Winter"
+      },
+      "romanceable": false
     }
   }
 }
